@@ -14,7 +14,7 @@ This is a simple calculator program that performs basic arithmetic operations su
 ## Preview
 
 <p align="center">
-    <img src="CalcPreview.png" width="600"/>
+    <img src="CalcPreview.png" width="400"/>
 </p>
 
 ## Requirements
@@ -26,7 +26,7 @@ This is a simple calculator program that performs basic arithmetic operations su
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-calculator.git
+   git clone https://github.com/JuanCardenas0/MyCalculatorJC
    ```
 2. Navigate to the project directory:
    ```bash
@@ -41,12 +41,11 @@ This is a simple calculator program that performs basic arithmetic operations su
 
 ## Example
 
-```plaintext
-Enter first number: 10
-Enter second number: 5
-Select operation (+, -, *, /): +
-Result: 15
-```
+Use browser interface to enter numbers.
+Use buttons to select operator.
+Select as many numbers and operators as needed. (Max 20 characters allowed)
+Click on equal button.
+Result displayed on screen.
 
 ## Contributing
 
