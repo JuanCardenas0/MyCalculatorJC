@@ -14,7 +14,7 @@ This is a simple calculator program that performs basic arithmetic operations su
 ## Preview
 
 <p align="center">
-    <img src="CalcPreview.png"/>
+    <img src="CalcPreview.png" width="600"/>
 </p>
 
 ## Requirements
