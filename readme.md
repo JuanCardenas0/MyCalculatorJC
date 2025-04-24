@@ -11,6 +11,12 @@ This is a simple calculator program that performs basic arithmetic operations su
 - Backspace button for deleting.
 - No dividing by zero
 
+## Preview
+
+<p align="center">
+    <img src="CalcPreview.png"/>
+</p>
+
 ## Requirements
 
 - A browser
