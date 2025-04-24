@@ -1,0 +1,139 @@
+    :root {
+        --author: "Juan Cardenas";
+        --title: "Calculator";
+        --font: inherit, "times new roman";
+      }
+
+      /*Styles for the project. Starting with setting the colors and parameters for the main grid, calculator and buttons*/
+
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: radial-gradient(
+          circle,
+          rgb(249, 145, 189) 20%,
+          rgb(148, 188, 233) 70%
+        );
+      }
+
+      .calculator {
+        z-index: 1;
+        width: 300px;
+        height: 400px;
+        background-color: #f1aae3;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(86, 0, 68, 0.4);
+        padding: 20px;
+        animation: floating 5s infinite;
+      }
+
+      .display {
+        font-family: var(--font);
+        background-color: #510143;
+        color: white;
+        padding: 15px;
+        text-align: right;
+        font-size: 24px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 17%);
+        grid-template-rows: repeat(4, 32%);
+        grid-gap: 10px;
+      }
+
+      button {
+        font-family: var(--font);
+        background-color: #510143;
+        color: rgba(255, 255, 255, 0.9);
+        border: none;
+        padding: 15%;
+        font-size: 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #86036e;
+      }
+
+      .operator {
+        background-color: #ffa500;
+      }
+
+      .operator:hover {
+        background-color: #ffb733;
+      }
+
+      .equal {
+        background-color: #4caf50;
+        grid-column: span 2;
+      }
+
+      .equal:hover {
+        background-color: #66bb6a;
+      }
+
+      .clear {
+        background-color: #f44336;
+      }
+
+      .clear:hover {
+        background-color: #f76a5e;
+      }
+
+      .backspace {
+        background-color: #86231c;
+      }
+      .backspace:hover {
+        background-color: #c65349;
+      }
+
+      .watermark {
+        position: fixed;
+        bottom: 1vh;
+        right: 1vh;
+        font-size: 1.2vh;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Segoe UI";
+        letter-spacing: 0.2vh;
+      }
+
+      .watermark:hover {
+        color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+      }
+
+      /*Animations from this point on. Moving animation*/
+
+      .floating {
+        position: relative;
+        animation-timing-function: cubic-bezier(1, 1, 1, 1);
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateX(-0.2vh) translateY(-0.2vh);
+        }
+        25% {
+          transform: translateX(0.2vh) translateY(0.2vh);
+        }
+        50% {
+          transform: translateX(-0.2vh) translateY(0.2vh);
+        }
+        75% {
+          transform: translateX(0.2vh) translateY(-0.2vh);
+        }
+        100% {
+          transform: translateX(-0.2vh) translateY(-0.2vh);
+        }
+      }
