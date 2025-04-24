@@ -41,11 +41,11 @@ This is a simple calculator program that performs basic arithmetic operations su
 
 ## Example
 
-Use browser interface to enter numbers.
-Use buttons to select operator.
-Select as many numbers and operators as needed. (Max 20 characters allowed)
-Click on equal button.
-Result displayed on screen.
+- Use browser interface to enter numbers.
+- Use buttons to select operator.
+- Select as many numbers and operators as needed. (Max 20 characters allowed)
+- Click on equal button.
+- Result displayed on screen.
 
 ## Contributing
 
